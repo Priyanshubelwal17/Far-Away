@@ -108,9 +108,10 @@ button:hover {
 }
 
 input[type="checkbox"] {
+  color: white;
   width: 16px;
   height: 16px;
-  accent-color: var(--leaf-green);
+  accent-color: #ff7e33;
 }
 
 .list li button {
