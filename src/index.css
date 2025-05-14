@@ -34,7 +34,7 @@ h1 {
   color: white;
   font-family: "Monoton", cursive;
   font-size: 3rem;
-  padding: 15px 20px;
+  padding: 70px 20px;
   text-align: center;
   letter-spacing: 1px;
   margin: 0;
@@ -43,10 +43,11 @@ h1 {
 /* Compact form section */
 .add-form {
   background-color: var(--sky-blue);
-  padding: 15px 20px;
+  padding: 35px 20px;
   display: flex;
-  gap: 8px;
+  gap: 10px;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -90,6 +91,30 @@ button:hover {
   padding: 15px 20px;
 }
 
+.actions select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #007bff; /* Blue border */
+  background-color: #f0f8ff; /* Light background */
+  color: #333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.actions select:hover {
+  background-color: #e6f0ff;
+  border-color: #0056b3;
+}
+
+.actions {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center; /* Center align */
+}
+
 .list ul {
   list-style: none;
   display: grid;
@@ -127,7 +152,7 @@ input[type="checkbox"] {
 .stats {
   background-color: var(--sky-blue);
   color: white;
-  padding: 12px;
+  padding: 40px;
   text-align: center;
   font-size: 0.95rem;
   font-weight: 600;
