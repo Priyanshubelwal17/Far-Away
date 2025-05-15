@@ -50,6 +50,29 @@ h1 {
   justify-content: center;
   flex-wrap: wrap;
 }
+form button {
+  background-color: #007bff; /* Cool Blue */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+  margin-left: 0.5rem;
+}
+
+form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+form button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+}
 
 h3 {
   color: white;
@@ -113,6 +136,28 @@ button:hover {
   margin: 1rem 0;
   display: flex;
   justify-content: center; /* Center align */
+}
+.actions button {
+  background-color: #007bff; /* Modern blue */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.actions button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+.actions button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
 }
 
 .list ul {
