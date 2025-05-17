@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import Form from "./Form";
 import PackingList from "./PackingList";
 import Stats from "./Stats";
 
 export default function App() {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(() => {
+    const storedItems = localStorage.getItem("items");
+    return storedItems ? JSON.parse(storedItems) : [];
+  });
+
   function handleAddItems(item) {
     setItems((items) => [...items, item]);
   }
@@ -26,6 +30,10 @@ export default function App() {
     const confirmed = window.confirm("Are you sure want to delete all items");
     if (confirmed) setItems([]);
   }
+
+  useEffect(() => {
+    localStorage.setItems("items", JSON.stringify(items));
+  }, [items]);
 
   return (
     <div className="app">
