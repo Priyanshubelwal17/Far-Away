@@ -32,7 +32,7 @@ export default function App() {
   }
 
   useEffect(() => {
-    localStorage.setItems("items", JSON.stringify(items));
+    localStorage.setItem("items", JSON.stringify(items));
   }, [items]);
 
   return (
